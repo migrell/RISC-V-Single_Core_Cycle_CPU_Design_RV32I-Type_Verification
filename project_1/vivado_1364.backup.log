@@ -1,0 +1,1138 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr 13 07:20:07 2025
+# Process ID: 1364
+# Current directory: C:/Users/parkj/Desktop/RV32I_Project_Final/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25912 C:\Users\parkj\Desktop\RV32I_Project_Final\project_1\project_1.xpr
+# Log file: C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/vivado.log
+# Journal file: C:/Users/parkj/Desktop/RV32I_Project_Final/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/migtell/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32I' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_RV32I_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ControlUnit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/DataPath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/MCU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MCU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/RV32i_Core_o.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I_Core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RV32I
+ERROR: [VRFC 10-4982] syntax error near '[' [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:81]
+ERROR: [VRFC 10-4982] syntax error near '[' [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:87]
+ERROR: [VRFC 10-2989] 'imm_b' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:82]
+ERROR: [VRFC 10-2989] 'imm_b' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:84]
+ERROR: [VRFC 10-2989] 'rs1_val' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:88]
+ERROR: [VRFC 10-2989] 'rs2_val' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:89]
+ERROR: [VRFC 10-2989] 'rs1_val' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:90]
+ERROR: [VRFC 10-2865] module 'tb_RV32I' ignored due to previous errors [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:3]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32I' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_RV32I_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ControlUnit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/DataPath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/MCU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MCU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/RV32i_Core_o.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I_Core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RV32I
+ERROR: [VRFC 10-4982] syntax error near '[' [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:65]
+ERROR: [VRFC 10-4982] syntax error near '[' [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:71]
+ERROR: [VRFC 10-2989] 'imm_b' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:66]
+ERROR: [VRFC 10-2989] 'imm_b' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:68]
+ERROR: [VRFC 10-2989] 'rs1_val' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:72]
+ERROR: [VRFC 10-2989] 'rs2_val' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:73]
+ERROR: [VRFC 10-2989] 'rs1_val' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:74]
+ERROR: [VRFC 10-2865] module 'tb_RV32I' ignored due to previous errors [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:3]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32I' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_RV32I_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ControlUnit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/DataPath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/MCU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MCU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/RV32i_Core_o.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I_Core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RV32I
+INFO: [VRFC 10-311] analyzing module tb_RV32I
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'tb_RV32I' [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:110]
+INFO: [VRFC 10-311] analyzing module tb_top
+WARNING: [VRFC 10-3824] variable 'type_str' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:239]
+WARNING: [VRFC 10-3824] variable 'pc' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:240]
+WARNING: [VRFC 10-3824] variable 'instr' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:241]
+WARNING: [VRFC 10-3824] variable 'x1' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:242]
+WARNING: [VRFC 10-3824] variable 'x2' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:243]
+WARNING: [VRFC 10-3824] variable 'x7' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:244]
+WARNING: [VRFC 10-3824] variable 'x8' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:245]
+WARNING: [VRFC 10-3824] variable 'imm_u' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:247]
+WARNING: [VRFC 10-3824] variable 'imm_i' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:248]
+WARNING: [VRFC 10-3824] variable 'imm_s' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:249]
+WARNING: [VRFC 10-3824] variable 'imm_b' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:250]
+WARNING: [VRFC 10-3824] variable 'imm_jal' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:251]
+WARNING: [VRFC 10-3824] variable 'imm_jalr' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:255]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto db447bc976b64ec5bb463817d84f3cec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32I_behav xil_defaultlib.tb_RV32I xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/migtell/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto db447bc976b64ec5bb463817d84f3cec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32I_behav xil_defaultlib.tb_RV32I xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.mux_2x1
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.RV32I_Core
+Compiling module xil_defaultlib.rom
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.MCU
+Compiling module xil_defaultlib.tb_RV32I
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RV32I_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_RV32I_behav -key {Behavioral:sim_1:Functional:tb_RV32I} -tclbatch {tb_RV32I.tcl} -view {C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/tb_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/tb_top_behav.wcfg
+source tb_RV32I.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 110 ns : File "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv" Line 122
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1134.102 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_RV32I_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1134.102 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32I' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_RV32I_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ControlUnit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/DataPath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/MCU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MCU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/RV32i_Core_o.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I_Core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RV32I
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto db447bc976b64ec5bb463817d84f3cec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32I_behav xil_defaultlib.tb_RV32I xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/migtell/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto db447bc976b64ec5bb463817d84f3cec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32I_behav xil_defaultlib.tb_RV32I xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.mux_2x1
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.RV32I_Core
+Compiling module xil_defaultlib.rom
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.MCU
+Compiling module xil_defaultlib.tb_RV32I
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RV32I_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Starting RISC-V Testing
+======================
+
+[Cycle 0, Time 54000 ns] PC=0x00000000, Instr=0x00110233, Type=R-TYPE
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=0000, Result=0x00000017
+Data: RF1=0x0000000c, RF2=0x0000000b, Imm=0xxxxxxxxx
+Registers:
+  x0=0x00000000, x1=0x0000000b, x2=0x0000000c, x3=0x0000000d
+  x4=0x00000017, x5=0x0000000f, x6=0x00000010, x7=0x00000011
+------------------------------------------
+
+[Cycle 1, Time 64000 ns] PC=0x00000004, Instr=0x401102b3, Type=R-TYPE
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=1000, Result=0x00000001
+Data: RF1=0x0000000c, RF2=0x0000000b, Imm=0xxxxxxxxx
+Registers:
+  x0=0x00000000, x1=0x0000000b, x2=0x0000000c, x3=0x0000000d
+  x4=0x00000017, x5=0x0000000f, x6=0x00000010, x7=0x00000011
+------------------------------------------
+
+[Cycle 2, Time 74000 ns] PC=0x00000008, Instr=0x00111333, Type=R-TYPE
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=0001, Result=0x00006000
+Data: RF1=0x0000000c, RF2=0x0000000b, Imm=0xxxxxxxxx
+Registers:
+  x0=0x00000000, x1=0x0000000b, x2=0x0000000c, x3=0x0000000d
+  x4=0x00000017, x5=0x00000001, x6=0x00000010, x7=0x00000011
+------------------------------------------
+
+[Cycle 3, Time 84000 ns] PC=0x0000000c, Instr=0x001123b3, Type=R-TYPE
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=0010, Result=0x00000000
+Data: RF1=0x0000000c, RF2=0x0000000b, Imm=0xxxxxxxxx
+Registers:
+  x0=0x00000000, x1=0x0000000b, x2=0x0000000c, x3=0x0000000d
+  x4=0x00000017, x5=0x00000001, x6=0x00006000, x7=0x00000011
+------------------------------------------
+
+[Cycle 4, Time 94000 ns] PC=0x00000010, Instr=0x00113433, Type=R-TYPE
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=0011, Result=0x00000000
+Data: RF1=0x0000000c, RF2=0x0000000b, Imm=0xxxxxxxxx
+Registers:
+  x0=0x00000000, x1=0x0000000b, x2=0x0000000c, x3=0x0000000d
+  x4=0x00000017, x5=0x00000001, x6=0x00006000, x7=0x00000000
+------------------------------------------
+
+[Cycle 5, Time 104000 ns] PC=0x00000014, Instr=0x001144b3, Type=R-TYPE
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=0100, Result=0x00000007
+Data: RF1=0x0000000c, RF2=0x0000000b, Imm=0xxxxxxxxx
+Registers:
+  x0=0x00000000, x1=0x0000000b, x2=0x0000000c, x3=0x0000000d
+  x4=0x00000017, x5=0x00000001, x6=0x00006000, x7=0x00000000
+------------------------------------------
+
+[Cycle 6, Time 114000 ns] PC=0x00000018, Instr=0x00115533, Type=R-TYPE
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=0101, Result=0x00000000
+Data: RF1=0x0000000c, RF2=0x0000000b, Imm=0xxxxxxxxx
+Registers:
+  x0=0x00000000, x1=0x0000000b, x2=0x0000000c, x3=0x0000000d
+  x4=0x00000017, x5=0x00000001, x6=0x00006000, x7=0x00000000
+------------------------------------------
+
+[Cycle 7, Time 124000 ns] PC=0x0000001c, Instr=0x401155b3, Type=R-TYPE
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=1101, Result=0x00000000
+Data: RF1=0x0000000c, RF2=0x0000000b, Imm=0xxxxxxxxx
+Registers:
+  x0=0x00000000, x1=0x0000000b, x2=0x0000000c, x3=0x0000000d
+  x4=0x00000017, x5=0x00000001, x6=0x00006000, x7=0x00000000
+------------------------------------------
+
+[Cycle 8, Time 134000 ns] PC=0x00000020, Instr=0x00116633, Type=R-TYPE
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=0110, Result=0x0000000f
+Data: RF1=0x0000000c, RF2=0x0000000b, Imm=0xxxxxxxxx
+Registers:
+  x0=0x00000000, x1=0x0000000b, x2=0x0000000c, x3=0x0000000d
+  x4=0x00000017, x5=0x00000001, x6=0x00006000, x7=0x00000000
+------------------------------------------
+
+[Cycle 9, Time 144000 ns] PC=0x00000024, Instr=0x001176b3, Type=R-TYPE
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=0111, Result=0x00000008
+Data: RF1=0x0000000c, RF2=0x0000000b, Imm=0xxxxxxxxx
+Registers:
+  x0=0x00000000, x1=0x0000000b, x2=0x0000000c, x3=0x0000000d
+  x4=0x00000017, x5=0x00000001, x6=0x00006000, x7=0x00000000
+------------------------------------------
+
+[Cycle 10, Time 154000 ns] PC=0x00000028, Instr=0x00202423, Type=S-TYPE
+Control: regFileWe=0, aluSrcMuxSel=1, dataWe=1, branch=0, isJAL=0, isJALR=0
+ALU: Control=0000, Result=0x00008000
+Data: RF1=0x00000000, RF2=0x0000000c, Imm=0x00000008
+Registers:
+  x0=0x00000000, x1=0x0000000b, x2=0x0000000c, x3=0x0000000d
+  x4=0x00000017, x5=0x00000001, x6=0x00006000, x7=0x00000000
+Memory: Addr=0x00008000, WData=0x0000000c, RData=0xxxxxxxxx
+------------------------------------------
+
+[Cycle 11, Time 164000 ns] PC=0x0000002c, Instr=0x00102223, Type=S-TYPE
+Control: regFileWe=0, aluSrcMuxSel=1, dataWe=1, branch=0, isJAL=0, isJALR=0
+ALU: Control=0000, Result=0x00004000
+Data: RF1=0x00000000, RF2=0x0000000b, Imm=0x00000004
+Registers:
+  x0=0x00000000, x1=0x0000000b, x2=0x0000000c, x3=0x0000000d
+  x4=0x00000017, x5=0x00000001, x6=0x00006000, x7=0x00000000
+Memory: Addr=0x00004000, WData=0x0000000b, RData=0xxxxxxxxx
+------------------------------------------
+
+[Cycle 12, Time 174000 ns] PC=0x00000030, Instr=0x00802183, Type=L-TYPE
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=0000, Result=0x00008000
+Data: RF1=0x00000000, RF2=0x00000000, Imm=0x00000008
+Registers:
+  x0=0x00000000, x1=0x0000000b, x2=0x0000000c, x3=0x0000000d
+  x4=0x00000017, x5=0x00000001, x6=0x00006000, x7=0x00000000
+Memory: Addr=0x00008000, WData=0x00000000, RData=0xxxxxxxxx
+------------------------------------------
+
+[Cycle 13, Time 184000 ns] PC=0x00000034, Instr=0x00402703, Type=L-TYPE
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=0000, Result=0x00004000
+Data: RF1=0x00000000, RF2=0x00000017, Imm=0x00000004
+Registers:
+  x0=0x00000000, x1=0x0000000b, x2=0x0000000c, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0x00000001, x6=0x00006000, x7=0x00000000
+Memory: Addr=0x00004000, WData=0x00000017, RData=0xxxxxxxxx
+------------------------------------------
+
+[Cycle 14, Time 194000 ns] PC=0x00000038, Instr=0x00100093, Type=I-TYPE
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=0000, Result=0x00001000
+Data: RF1=0x00000000, RF2=0x0000000b, Imm=0x00000001
+Registers:
+  x0=0x00000000, x1=0x0000000b, x2=0x0000000c, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0x00000001, x6=0x00006000, x7=0x00000000
+------------------------------------------
+
+[Cycle 15, Time 204000 ns] PC=0x0000003c, Instr=0x00209313, Type=I-TYPE
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=0001, Result=0x00004000
+Data: RF1=0x00001000, RF2=0x0000000c, Imm=0x00000002
+Registers:
+  x0=0x00000000, x1=0x00001000, x2=0x0000000c, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0x00000001, x6=0x00006000, x7=0x00000000
+------------------------------------------
+
+[Cycle 16, Time 214000 ns] PC=0x00000040, Instr=0x0020d513, Type=I-TYPE
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=0101, Result=0x00000400
+Data: RF1=0x00001000, RF2=0x0000000c, Imm=0x00000002
+Registers:
+  x0=0x00000000, x1=0x00001000, x2=0x0000000c, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0x00000001, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 17, Time 224000 ns] PC=0x00000044, Instr=0x4020d593, Type=I-TYPE
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=1101, Result=0x00000400
+Data: RF1=0x00001000, RF2=0x0000000c, Imm=0x00000002
+Registers:
+  x0=0x00000000, x1=0x00001000, x2=0x0000000c, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0x00000001, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 18, Time 234000 ns] PC=0x00000048, Instr=0x00210663, Type=B-TYPE
+Control: regFileWe=0, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=0
+ALU: Control=0000, Result=0x00000018
+Data: RF1=0x0000000c, RF2=0x0000000c, Imm=0x0000000c
+Registers:
+  x0=0x00000000, x1=0x00001000, x2=0x0000000c, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0x00000001, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 19, Time 244000 ns] PC=0x00000054, Instr=0x00003417, Type=AUIPC
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=0000, Result=0x00003054
+Data: RF1=0x00000000, RF2=0x00000000, Imm=0x00003000
+Registers:
+  x0=0x00000000, x1=0x00001000, x2=0x0000000c, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0x00000001, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 20, Time 254000 ns] PC=0x00000058, Instr=0x004000ef, Type=JAL
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=1, isJALR=0
+ALU: Control=1010, Result=0x0000005c
+Data: RF1=0x00000000, RF2=0x00000017, Imm=0x00000004
+Registers:
+  x0=0x00000000, x1=0x00001000, x2=0x0000000c, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0x00000001, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 21, Time 264000 ns] PC=0x0000005c, Instr=0x00408167, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000060
+Data: RF1=0x0000005c, RF2=0x00000017, Imm=0x00000004
+Registers:
+  x0=0x00000000, x1=0x0000005c, x2=0x0000000c, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0x00000001, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 22, Time 274000 ns] PC=0x00000060, Instr=0x000002b7, Type=LUI
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=0000, Result=0x00000060
+Data: RF1=0x00000000, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x0000005c, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0x00000001, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 23, Time 284000 ns] PC=0x00000064, Instr=0x0042a283, Type=L-TYPE
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+ALU: Control=0000, Result=0x00000064
+Data: RF1=0x00000060, RF2=0x00000017, Imm=0x00000004
+Registers:
+  x0=0x00000000, x1=0x0000005c, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0x00000060, x6=0x00004000, x7=0x00000000
+Memory: Addr=0x00000064, WData=0x00000017, RData=0xxxxxxxxx
+------------------------------------------
+
+[Cycle 24, Time 294000 ns] PC=0x00000068, Instr=0x0052a023, Type=S-TYPE
+Control: regFileWe=0, aluSrcMuxSel=1, dataWe=1, branch=0, isJAL=0, isJALR=0
+ALU: Control=0000, Result=0xxxxxxxxx
+Data: RF1=0xxxxxxxxx, RF2=0xxxxxxxxx, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x0000005c, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+Memory: Addr=0xxxxxxxxx, WData=0xxxxxxxxx, RData=0xxxxxxxxx
+------------------------------------------
+
+[Cycle 25, Time 304000 ns] PC=0x0000006c, Instr=0x004000ef, Type=JAL
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=1, isJALR=0
+ALU: Control=1010, Result=0x00000070
+Data: RF1=0x00000000, RF2=0x00000017, Imm=0x00000004
+Registers:
+  x0=0x00000000, x1=0x0000005c, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 26, Time 314000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 27, Time 324000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 28, Time 334000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 29, Time 344000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 30, Time 354000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 31, Time 364000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 32, Time 374000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 33, Time 384000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 34, Time 394000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 35, Time 404000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 36, Time 414000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 37, Time 424000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 38, Time 434000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 39, Time 444000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 40, Time 454000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 41, Time 464000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 42, Time 474000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 43, Time 484000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 44, Time 494000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 45, Time 504000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 46, Time 514000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 47, Time 524000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 48, Time 534000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 49, Time 544000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 50, Time 554000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 51, Time 564000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 52, Time 574000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 53, Time 584000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 54, Time 594000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 55, Time 604000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 56, Time 614000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 57, Time 624000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 58, Time 634000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 59, Time 644000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 60, Time 654000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 61, Time 664000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 62, Time 674000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 63, Time 684000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 64, Time 694000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 65, Time 704000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 66, Time 714000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 67, Time 724000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 68, Time 734000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 69, Time 744000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 70, Time 754000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 71, Time 764000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 72, Time 774000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 73, Time 784000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 74, Time 794000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 75, Time 804000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 76, Time 814000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 77, Time 824000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 78, Time 834000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 79, Time 844000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 80, Time 854000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 81, Time 864000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 82, Time 874000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 83, Time 884000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 84, Time 894000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 85, Time 904000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 86, Time 914000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 87, Time 924000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 88, Time 934000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 89, Time 944000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 90, Time 954000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 91, Time 964000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 92, Time 974000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 93, Time 984000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+
+[Cycle 94, Time 994000 ns] PC=0x00000070, Instr=0x00008067, Type=JALR
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+ALU: Control=1011, Result=0x00000074
+Data: RF1=0x00000070, RF2=0x00000000, Imm=0x00000000
+Registers:
+  x0=0x00000000, x1=0x00000070, x2=0x00000060, x3=0xxxxxxxxx
+  x4=0x00000017, x5=0xxxxxxxxx, x6=0x00004000, x7=0x00000000
+------------------------------------------
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1327.180 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 13 08:08:46 2025...

@@ -1,3 +1,6 @@
+
+`timescale 1ns/1ps
+
 `include "defines.sv"
 
 module RV32I_Core (

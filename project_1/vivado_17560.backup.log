@@ -1,0 +1,202 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr 13 07:12:04 2025
+# Process ID: 17560
+# Current directory: C:/Users/parkj/Desktop/RV32I_Project_Final/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22804 C:\Users\parkj\Desktop\RV32I_Project_Final\project_1\project_1.xpr
+# Log file: C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/vivado.log
+# Journal file: C:/Users/parkj/Desktop/RV32I_Project_Final/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/migtell/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32I' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_RV32I_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ControlUnit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/DataPath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/MCU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MCU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/RV32i_Core_o.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I_Core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RV32I
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto db447bc976b64ec5bb463817d84f3cec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32I_behav xil_defaultlib.tb_RV32I xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/migtell/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto db447bc976b64ec5bb463817d84f3cec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32I_behav xil_defaultlib.tb_RV32I xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2991] 'btaken' is not declared under prefix 'Core' [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:106]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32I' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_RV32I_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ControlUnit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/DataPath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/MCU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MCU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/RV32i_Core_o.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I_Core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RV32I
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto db447bc976b64ec5bb463817d84f3cec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32I_behav xil_defaultlib.tb_RV32I xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/migtell/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto db447bc976b64ec5bb463817d84f3cec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RV32I_behav xil_defaultlib.tb_RV32I xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2991] 'btaken' is not declared under prefix 'U_CU' [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:92]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32I' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_RV32I_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ControlUnit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/DataPath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/MCU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MCU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/RV32i_Core_o.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I_Core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RV32I
+ERROR: [VRFC 10-4982] syntax error near '[' [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:81]
+ERROR: [VRFC 10-4982] syntax error near '[' [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:87]
+ERROR: [VRFC 10-2989] 'imm_b' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:82]
+ERROR: [VRFC 10-2989] 'imm_b' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:84]
+ERROR: [VRFC 10-2989] 'rs1_val' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:88]
+ERROR: [VRFC 10-2989] 'rs2_val' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:89]
+ERROR: [VRFC 10-2989] 'rs1_val' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:90]
+ERROR: [VRFC 10-2865] module 'tb_RV32I' ignored due to previous errors [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:3]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RV32I' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_RV32I_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ControlUnit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/DataPath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/MCU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MCU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/RV32i_Core_o.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I_Core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RV32I
+ERROR: [VRFC 10-4982] syntax error near '[' [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:81]
+ERROR: [VRFC 10-4982] syntax error near '[' [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:87]
+ERROR: [VRFC 10-2989] 'imm_b' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:82]
+ERROR: [VRFC 10-2989] 'imm_b' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:84]
+ERROR: [VRFC 10-2989] 'rs1_val' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:88]
+ERROR: [VRFC 10-2989] 'rs2_val' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:89]
+ERROR: [VRFC 10-2989] 'rs1_val' is not declared [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:90]
+ERROR: [VRFC 10-2865] module 'tb_RV32I' ignored due to previous errors [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:3]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 13 07:20:00 2025...

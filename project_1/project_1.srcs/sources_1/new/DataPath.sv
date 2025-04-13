@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 `include "defines.sv"
 
 module DataPath (
@@ -6,7 +8,7 @@ module DataPath (
     input  logic        regFileWe,
     input  logic [ 3:0] aluControl,
     input  logic        aluSrcMuxSel,
-    input  logic [ 1:0] RFWDSrcMuxSel,  // 1비트에서 2비트로 수정
+    input  logic [ 1:0] RFWDSrcMuxSel,
     input  logic        branch,
     input  logic        aluASelect,
     input  logic        isJALR,
@@ -121,24 +123,51 @@ module alu (
     output logic [31:0] result,
     output logic        btaken
 );
+    // ALU 내부에 매크로 정의 포함
+    localparam ADD  = 4'b0000;
+    localparam SUB  = 4'b1000;
+    localparam SLL  = 4'b0001;
+    localparam SLT  = 4'b0010;
+    localparam SLTU = 4'b0011;
+    localparam XOR  = 4'b0100;
+    localparam SRL  = 4'b0101;
+    localparam SRA  = 4'b1101;
+    localparam OR   = 4'b0110;
+    localparam AND  = 4'b0111;
+    localparam JAL  = 4'b1010;
+    localparam JALR = 4'b1011;
+
+    // Branch 코드 정의
+    localparam BEQ  = 3'b000;
+    localparam BNE  = 3'b001;
+    localparam BLT  = 3'b100;
+    localparam BGE  = 3'b101;
+    localparam BLTU = 3'b110;
+    localparam BGEU = 3'b111;
+
     always_comb begin
+        // Initialize result to avoid latches
+        result = 32'd0;
+        
         case (aluControl)
-            `ADD: begin
-                // LUI: a = 0, result = b << 12
-                // AUIPC: a = PC, result = PC + (b << 12)
-                result = (a == 32'b0) ? (b << 12) : (a + (b << 12));
+            ADD: begin
+                // LUI/AUIPC 처리를 위한 코드
+                if (a == 32'b0) 
+                    result = b << 12;  // LUI
+                else 
+                    result = a + b;    // 기본 ADD
             end
-            `SUB:    result = a - b;
-            `SLL:    result = a << b[4:0];
-            `SRL:    result = a >> b[4:0];
-            `SRA:    result = $signed(a) >>> b[4:0];
-            `SLT:    result = ($signed(a) < $signed(b)) ? 32'd1 : 32'd0;
-            `SLTU:   result = (a < b) ? 32'd1 : 32'd0;
-            `XOR:    result = a ^ b;
-            `OR:     result = a | b;
-            `AND:    result = a & b;
-            `JAL:    result = a + 32'd4;  // JAL: rd = PC + 4, a = PC
-            `JALR:   result = a + 32'd4;  // JALR: rd = PC + 4, a = PC
+            SUB:    result = a - b;
+            SLL:    result = a << b[4:0];
+            SLT:    result = ($signed(a) < $signed(b)) ? 32'd1 : 32'd0;
+            SLTU:   result = (a < b) ? 32'd1 : 32'd0;
+            XOR:    result = a ^ b;
+            SRL:    result = a >> b[4:0];
+            SRA:    result = $signed(a) >>> b[4:0];
+            OR:     result = a | b;
+            AND:    result = a & b;
+            JAL:    result = a + 32'd4;  // JAL: rd = PC + 4, a = PC
+            JALR:   result = a + 32'd4;  // JALR: rd = PC + 4, a = PC
             default: result = 32'd0;
         endcase
     end
@@ -147,26 +176,79 @@ module alu (
         btaken = 1'b0; // 기본값
         
         case (aluControl)
-            `JAL: begin
+            JAL: begin
                 btaken = 1'b1; // JAL은 항상 분기 실행
             end
-            `JALR: begin
+            JALR: begin
                 btaken = 1'b1; // JALR은 항상 분기 실행
             end
             default: begin
                 case (aluControl[2:0])
-                    `BEQ:  btaken = (a == b);
-                    `BNE:  btaken = (a != b);
-                    `BLT:  btaken = ($signed(a) < $signed(b));
-                    `BGE:  btaken = ($signed(a) >= $signed(b));
-                    `BLTU: btaken = (a < b);
-                    `BGEU: btaken = (a >= b);
+                    BEQ:  btaken = (a == b);
+                    BNE:  btaken = (a != b);
+                    BLT:  btaken = ($signed(a) < $signed(b));
+                    BGE:  btaken = ($signed(a) >= $signed(b));
+                    BLTU: btaken = (a < b);
+                    BGEU: btaken = (a >= b);
                     default: btaken = 1'b0;
                 endcase
             end
         endcase
     end
 endmodule
+// module alu (
+//     input  logic [3:0]  aluControl,
+//     input  logic [31:0] a,
+//     input  logic [31:0] b,
+//     output logic [31:0] result,
+//     output logic        btaken
+// );
+//     always_comb begin
+//         case (aluControl)
+//             `ADD: begin
+//                 // LUI: a = 0, result = b << 12
+//                 // AUIPC: a = PC, result = PC + (b << 12)
+//                 result = (a == 32'b0) ? (b << 12) : (a + (b << 12));
+//             end
+//             `SUB:    result = a - b;
+//             `SLL:    result = a << b[4:0];
+//             `SRL:    result = a >> b[4:0];
+//             `SRA:    result = $signed(a) >>> b[4:0];
+//             `SLT:    result = ($signed(a) < $signed(b)) ? 32'd1 : 32'd0;
+//             `SLTU:   result = (a < b) ? 32'd1 : 32'd0;
+//             `XOR:    result = a ^ b;
+//             `OR:     result = a | b;
+//             `AND:    result = a & b;
+//             `JAL:    result = a + 32'd4;  // JAL: rd = PC + 4, a = PC
+//             `JALR:   result = a + 32'd4;  // JALR: rd = PC + 4, a = PC
+//             default: result = 32'd0;
+//         endcase
+//     end
+
+//     always_comb begin : branch_processor
+//         btaken = 1'b0; // 기본값
+        
+//         case (aluControl)
+//             `JAL: begin
+//                 btaken = 1'b1; // JAL은 항상 분기 실행
+//             end
+//             `JALR: begin
+//                 btaken = 1'b1; // JALR은 항상 분기 실행
+//             end
+//             default: begin
+//                 case (aluControl[2:0])
+//                     `BEQ:  btaken = (a == b);
+//                     `BNE:  btaken = (a != b);
+//                     `BLT:  btaken = ($signed(a) < $signed(b));
+//                     `BGE:  btaken = ($signed(a) >= $signed(b));
+//                     `BLTU: btaken = (a < b);
+//                     `BGEU: btaken = (a >= b);
+//                     default: btaken = 1'b0;
+//                 endcase
+//             end
+//         endcase
+//     end
+// endmodule
 
 module register (
     input  logic        clk,
@@ -201,14 +283,22 @@ module RegisterFile (
     output logic [31:0] RData2
 );
     logic [31:0] RegFile[0:2**5-1];
+
     initial begin
-        for (int i = 0; i < 32; i++) begin
-            RegFile[i] = 10 + i;
+        // x0 must always be 0
+        RegFile[0] = 32'h00000000;
+
+        // x4 수동 초기화
+        RegFile[4] = 32'h00000000;
+
+        // 나머지 초기값 설정 (x4는 제외!)
+        for (int i = 1; i < 32; i++) begin
+            if (i != 4) RegFile[i] = 10 + i;
         end
     end
 
     always_ff @(posedge clk) begin
-        if (we) RegFile[WAddr] <= WData;
+        if (we && WAddr != 0) RegFile[WAddr] <= WData;
     end
 
     always_comb begin
@@ -216,6 +306,70 @@ module RegisterFile (
         RData2 = (RAddr2 != 0) ? RegFile[RAddr2] : 32'b0;
     end
 endmodule
+
+
+// module RegisterFile (
+//     input  logic        clk,
+//     input  logic        we,
+//     input  logic [ 4:0] RAddr1,
+//     input  logic [ 4:0] RAddr2,
+//     input  logic [ 4:0] WAddr,
+//     input  logic [31:0] WData,
+//     output logic [31:0] RData1,
+//     output logic [31:0] RData2
+// );
+//     logic [31:0] RegFile[0:2**5-1];
+//     initial begin
+//         // x0 must always be 0
+//         RegFile[0] = 32'h00000000;
+        
+        
+//         // Initialize other registers with test values
+//         for (int i = 1; i < 32; i++) begin
+//             RegFile[i] = 10 + i;
+//         end
+//     end
+
+//     // Write operation
+//     always_ff @(posedge clk) begin
+//         // x0 should never be written
+//         if (we && WAddr != 0) RegFile[WAddr] <= WData;
+//     end
+
+//     // Read operation
+//     always_comb begin
+//         // x0 is hardwired to 0
+//         RData1 = (RAddr1 != 0) ? RegFile[RAddr1] : 32'b0;
+//         RData2 = (RAddr2 != 0) ? RegFile[RAddr2] : 32'b0;
+//     end
+// endmodule
+
+// module RegisterFile (
+//     input  logic        clk,
+//     input  logic        we,
+//     input  logic [ 4:0] RAddr1,
+//     input  logic [ 4:0] RAddr2,
+//     input  logic [ 4:0] WAddr,
+//     input  logic [31:0] WData,
+//     output logic [31:0] RData1,
+//     output logic [31:0] RData2
+// );
+//     logic [31:0] RegFile[0:2**5-1];
+//     initial begin
+//         for (int i = 0; i < 32; i++) begin
+//             RegFile[i] = 10 + i;
+//         end
+//     end
+
+//     always_ff @(posedge clk) begin
+//         if (we) RegFile[WAddr] <= WData;
+//     end
+
+//     always_comb begin
+//         RData1 = (RAddr1 != 0) ? RegFile[RAddr1] : 32'b0;
+//         RData2 = (RAddr2 != 0) ? RegFile[RAddr2] : 32'b0;
+//     end
+// endmodule
 
 module mux_2x1 (
     input  logic        sel,
@@ -232,6 +386,8 @@ module mux_2x1 (
     end
 endmodule
 
+`timescale 1ns / 1ps
+
 module extend (
     input  logic [31:0] instrCode,
     output logic [31:0] immExt
@@ -243,9 +399,15 @@ module extend (
         immExt = 32'bx;
         case (opcode)
             `OP_TYPE_R: immExt = 32'bx;
-            `OP_TYPE_L: immExt = {{20{instrCode[31]}}, instrCode[31:20]};
-            `OP_TYPE_S:
+
+            `OP_TYPE_L: begin
+                immExt = {{20{instrCode[31]}}, instrCode[31:20]};
+            end
+
+            `OP_TYPE_S: begin
                 immExt = {{20{instrCode[31]}}, instrCode[31:25], instrCode[11:7]};
+            end
+
             `OP_TYPE_I: begin
                 case (func3)
                     3'b001:  immExt = {27'b0, instrCode[24:20]};       // SLLI
@@ -254,6 +416,7 @@ module extend (
                     default: immExt = {{20{instrCode[31]}}, instrCode[31:20]};
                 endcase
             end
+
             `OP_TYPE_B: begin
                 immExt = {
                     {20{instrCode[31]}},
@@ -263,6 +426,17 @@ module extend (
                     1'b0
                 };
             end
+
+            `OP_TYPE_LU: begin
+                // LUI: imm = instr[31:12] << 12
+                immExt = {instrCode[31:12], 12'b0};
+            end
+
+            `OP_TYPE_AU: begin
+                // AUIPC: imm = instr[31:12] << 12
+                immExt = {instrCode[31:12], 12'b0};
+            end
+
             `OP_TYPE_J: begin
                 immExt = {
                     {12{instrCode[31]}},
@@ -272,10 +446,54 @@ module extend (
                     1'b0
                 };
             end
+
             `OP_TYPE_JALR: begin
                 immExt = {{20{instrCode[31]}}, instrCode[31:20]};
             end
+
             default: immExt = 32'bx;
         endcase
     end
 endmodule
+
+
+//     always_comb begin
+//         immExt = 32'bx;
+//         case (opcode)
+//             `OP_TYPE_R: immExt = 32'bx;
+//             `OP_TYPE_L: immExt = {{20{instrCode[31]}}, instrCode[31:20]};
+//             `OP_TYPE_S:
+//                 immExt = {{20{instrCode[31]}}, instrCode[31:25], instrCode[11:7]};
+//             `OP_TYPE_I: begin
+//                 case (func3)
+//                     3'b001:  immExt = {27'b0, instrCode[24:20]};       // SLLI
+//                     3'b101:  immExt = {27'b0, instrCode[24:20]};       // SRLI/SRAI
+//                     3'b011:  immExt = {20'b0, instrCode[31:20]};       // SLTIU
+//                     default: immExt = {{20{instrCode[31]}}, instrCode[31:20]};
+//                 endcase
+//             end
+//             `OP_TYPE_B: begin
+//                 immExt = {
+//                     {20{instrCode[31]}},
+//                     instrCode[7],
+//                     instrCode[30:25],
+//                     instrCode[11:8],
+//                     1'b0
+//                 };
+//             end
+//             `OP_TYPE_J: begin
+//                 immExt = {
+//                     {12{instrCode[31]}},
+//                     instrCode[19:12],
+//                     instrCode[20],
+//                     instrCode[30:21],
+//                     1'b0
+//                 };
+//             end
+//             `OP_TYPE_JALR: begin
+//                 immExt = {{20{instrCode[31]}}, instrCode[31:20]};
+//             end
+//             default: immExt = 32'bx;
+//         endcase
+//     end
+// endmodule

@@ -1,0 +1,1069 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr 13 05:05:36 2025
+# Process ID: 14000
+# Current directory: C:/Users/parkj/Desktop/RV32I_Project_Final/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19632 C:\Users\parkj\Desktop\RV32I_Project_Final\project_1\project_1.xpr
+# Log file: C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/vivado.log
+# Journal file: C:/Users/parkj/Desktop/RV32I_Project_Final/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/migtell/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1135.355 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ControlUnit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/DataPath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-311] analyzing module mux_2x1
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/MCU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MCU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/RV32i_Core_o.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32I_Core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.srcs/sources_1/new/rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+WARNING: [VRFC 10-3824] variable 'type_str' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:112]
+WARNING: [VRFC 10-3824] variable 'pc' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:113]
+WARNING: [VRFC 10-3824] variable 'instr' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:114]
+WARNING: [VRFC 10-3824] variable 'x1' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:115]
+WARNING: [VRFC 10-3824] variable 'x2' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:116]
+WARNING: [VRFC 10-3824] variable 'x7' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:117]
+WARNING: [VRFC 10-3824] variable 'x8' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:118]
+WARNING: [VRFC 10-3824] variable 'imm_u' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:120]
+WARNING: [VRFC 10-3824] variable 'imm_i' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:121]
+WARNING: [VRFC 10-3824] variable 'imm_s' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:122]
+WARNING: [VRFC 10-3824] variable 'imm_b' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:123]
+WARNING: [VRFC 10-3824] variable 'imm_jal' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:124]
+WARNING: [VRFC 10-3824] variable 'imm_jalr' must explicitly be declared as automatic or static [C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv:128]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto db447bc976b64ec5bb463817d84f3cec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/migtell/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto db447bc976b64ec5bb463817d84f3cec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4328] File: C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/tb.sv Line: 38 : Sensitivity on input argument "address" of task "force_pc_to_address" may never get triggered.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.mux_2x1
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.extenexit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 13 05:13:44 2025...
+.register
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.RV32I_Core
+Compiling module xil_defaultlib.rom
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.MCU
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -view {C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/tb_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/parkj/Desktop/RV32I_Project_Final/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+
+[Time 105000 ns] #1 Opcode R-TYPE
+PC:     00000000
+Instr:  00110233
+x1: 0000000b | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 0000000f | x6: 00000010 | x7: 00000011 | x8: 00000012
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 115000 ns] #2 Opcode R-TYPE
+PC:     00000004
+Instr:  401102b3
+x1: 0000000b | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 0000000f | x6: 00000010 | x7: 00000011 | x8: 00000012
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 125000 ns] #3 Opcode R-TYPE
+PC:     00000008
+Instr:  00111333
+x1: 0000000b | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 00000001 | x6: 00000010 | x7: 00000011 | x8: 00000012
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 135000 ns] #4 Opcode R-TYPE
+PC:     0000000c
+Instr:  001123b3
+x1: 0000000b | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 00000001 | x6: 00006000 | x7: 00000011 | x8: 00000012
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 145000 ns] #5 Opcode R-TYPE
+PC:     00000010
+Instr:  00113433
+x1: 0000000b | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 00000001 | x6: 00006000 | x7: 00000000 | x8: 00000012
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 155000 ns] #6 Opcode R-TYPE
+PC:     00000014
+Instr:  001144b3
+x1: 0000000b | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 00000001 | x6: 00006000 | x7: 00000000 | x8: 00000000
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 165000 ns] #7 Opcode R-TYPE
+PC:     00000018
+Instr:  00115533
+x1: 0000000b | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 00000001 | x6: 00006000 | x7: 00000000 | x8: 00000000
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 175000 ns] #8 Opcode R-TYPE
+PC:     0000001c
+Instr:  401155b3
+x1: 0000000b | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 00000001 | x6: 00006000 | x7: 00000000 | x8: 00000000
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 185000 ns] #9 Opcode R-TYPE
+PC:     00000020
+Instr:  00116633
+x1: 0000000b | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 00000001 | x6: 00006000 | x7: 00000000 | x8: 00000000
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 195000 ns] #10 Opcode R-TYPE
+PC:     00000024
+Instr:  001176b3
+x1: 0000000b | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 00000001 | x6: 00006000 | x7: 00000000 | x8: 00000000
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+===== TEST START =====
+
+[Time 205000 ns] #11 Opcode I-TYPE
+PC:     00000028
+Instr:  00100093
+x1: 0000000b | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 00000001 | x6: 00006000 | x7: 00000000 | x8: 00000000
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 215000 ns] #12 Opcode LUI
+PC:     00000058
+Instr:  000023b7
+x1: 00001000 | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 00000001 | x6: 00006000 | x7: 00000000 | x8: 00000000
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+LUI instruction: x7 <= imm << 12 = 00002000
+--------------------------------------------------------------
+
+[Time 225000 ns] #13 Opcode LUI
+PC:     00000058
+Instr:  000023b7
+x1: 00001000 | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 00000001 | x6: 00006000 | x7: xxxxxxxx | x8: 00000000
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+LUI instruction: x7 <= imm << 12 = 00002000
+--------------------------------------------------------------
+
+[Time 235000 ns] #14 Opcode LUI
+PC:     00000058
+Instr:  000023b7
+x1: 00001000 | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 00000001 | x6: 00006000 | x7: xxxxxxxx | x8: 00000000
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+LUI instruction: x7 <= imm << 12 = 00002000
+--------------------------------------------------------------
+
+----- LUI TEST -----
+
+[Time 245000 ns] #15 Opcode LUI
+PC:     00000058
+Instr:  000023b7
+x1: 00001000 | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 00000001 | x6: 00006000 | x7: xxxxxxxx | x8: 00000000
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+LUI instruction: x7 <= imm << 12 = 00002000
+--------------------------------------------------------------
+
+[Time 255000 ns] #16 Opcode AUIPC
+PC:     0000005c
+Instr:  00003417
+x1: 00001000 | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 00000001 | x6: 00006000 | x7: xxxxxxxx | x8: 00000000
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+AUIPC instruction: x8 <= PC + imm << 12 = 0000305c
+--------------------------------------------------------------
+
+[Time 265000 ns] #17 Opcode JAL
+PC:     00000060
+Instr:  004000ef
+x1: 00001000 | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 00000001 | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=1, isJALR=0
+JAL instruction: x1 <= PC + 4 = 00000064
+Jump target: 00000064
+--------------------------------------------------------------
+
+[Time 275000 ns] #18 Opcode JALR
+PC:     00000064
+Instr:  00408167
+x1: 00000064 | x2: 0000000c | x3: 0000000d | x4: 0000b00c
+x5: 00000001 | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x2 <= PC + 4 = 00000068
+Jump to: x1 + imm = 00000068
+--------------------------------------------------------------
+
+[Time 285000 ns] #19 Opcode LUI
+PC:     00000068
+Instr:  000002b7
+x1: 00000064 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: 00000001 | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+LUI instruction: x5 <= imm << 12 = 00000000
+--------------------------------------------------------------
+
+[Time 295000 ns] #20 Opcode L-TYPE
+PC:     0000006c
+Instr:  0042a283
+x1: 00000064 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 305000 ns] #21 Opcode S-TYPE
+PC:     00000070
+Instr:  0052a023
+x1: 00000064 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=0, aluSrcMuxSel=1, dataWe=1, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 315000 ns] #22 Opcode JAL
+PC:     00000074
+Instr:  004000ef
+x1: 00000064 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=1, isJALR=0
+JAL instruction: x1 <= PC + 4 = 00000078
+Jump target: 00000078
+--------------------------------------------------------------
+
+[Time 325000 ns] #23 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 335000 ns] #24 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 345000 ns] #25 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 355000 ns] #26 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 365000 ns] #27 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 375000 ns] #28 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 385000 ns] #29 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 395000 ns] #30 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 405000 ns] #31 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 415000 ns] #32 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 425000 ns] #33 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 435000 ns] #34 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 445000 ns] #35 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 455000 ns] #36 Opcode AUIPC
+PC:     0000005c
+Instr:  00003417
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+AUIPC instruction: x8 <= PC + imm << 12 = 0000305c
+--------------------------------------------------------------
+
+[Time 465000 ns] #37 Opcode AUIPC
+PC:     0000005c
+Instr:  00003417
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+AUIPC instruction: x8 <= PC + imm << 12 = 0000305c
+--------------------------------------------------------------
+
+[Time 475000 ns] #38 Opcode AUIPC
+PC:     0000005c
+Instr:  00003417
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+AUIPC instruction: x8 <= PC + imm << 12 = 0000305c
+--------------------------------------------------------------
+
+----- AUIPC TEST -----
+
+[Time 485000 ns] #39 Opcode AUIPC
+PC:     0000005c
+Instr:  00003417
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+AUIPC instruction: x8 <= PC + imm << 12 = 0000305c
+--------------------------------------------------------------
+
+[Time 495000 ns] #40 Opcode JAL
+PC:     00000060
+Instr:  004000ef
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=1, isJALR=0
+JAL instruction: x1 <= PC + 4 = 00000064
+Jump target: 00000064
+--------------------------------------------------------------
+
+[Time 505000 ns] #41 Opcode JALR
+PC:     00000064
+Instr:  00408167
+x1: 00000064 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x2 <= PC + 4 = 00000068
+Jump to: x1 + imm = 00000068
+--------------------------------------------------------------
+
+[Time 515000 ns] #42 Opcode LUI
+PC:     00000068
+Instr:  000002b7
+x1: 00000064 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+LUI instruction: x5 <= imm << 12 = 00000000
+--------------------------------------------------------------
+
+[Time 525000 ns] #43 Opcode L-TYPE
+PC:     0000006c
+Instr:  0042a283
+x1: 00000064 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 535000 ns] #44 Opcode S-TYPE
+PC:     00000070
+Instr:  0052a023
+x1: 00000064 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=0, aluSrcMuxSel=1, dataWe=1, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 545000 ns] #45 Opcode JAL
+PC:     00000074
+Instr:  004000ef
+x1: 00000064 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=1, isJALR=0
+JAL instruction: x1 <= PC + 4 = 00000078
+Jump target: 00000078
+--------------------------------------------------------------
+
+[Time 555000 ns] #46 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 565000 ns] #47 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 575000 ns] #48 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 585000 ns] #49 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 595000 ns] #50 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 605000 ns] #51 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 615000 ns] #52 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 625000 ns] #53 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 635000 ns] #54 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 645000 ns] #55 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 655000 ns] #56 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 665000 ns] #57 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 675000 ns] #58 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 685000 ns] #59 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 695000 ns] #60 Opcode JAL
+PC:     00000060
+Instr:  004000ef
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=1, isJALR=0
+JAL instruction: x1 <= PC + 4 = 00000064
+Jump target: 00000064
+--------------------------------------------------------------
+
+[Time 705000 ns] #61 Opcode JAL
+PC:     00000060
+Instr:  004000ef
+x1: 00000064 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=1, isJALR=0
+JAL instruction: x1 <= PC + 4 = 00000064
+Jump target: 00000064
+--------------------------------------------------------------
+
+[Time 715000 ns] #62 Opcode JAL
+PC:     00000060
+Instr:  004000ef
+x1: 00000064 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=1, isJALR=0
+JAL instruction: x1 <= PC + 4 = 00000064
+Jump target: 00000064
+--------------------------------------------------------------
+
+----- JAL TEST -----
+
+[Time 725000 ns] #63 Opcode JAL
+PC:     00000060
+Instr:  004000ef
+x1: 00000064 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=1, isJALR=0
+JAL instruction: x1 <= PC + 4 = 00000064
+Jump target: 00000064
+--------------------------------------------------------------
+
+[Time 735000 ns] #64 Opcode JALR
+PC:     00000064
+Instr:  00408167
+x1: 00000064 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x2 <= PC + 4 = 00000068
+Jump to: x1 + imm = 00000068
+--------------------------------------------------------------
+
+[Time 745000 ns] #65 Opcode LUI
+PC:     00000068
+Instr:  000002b7
+x1: 00000064 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+LUI instruction: x5 <= imm << 12 = 00000000
+--------------------------------------------------------------
+
+[Time 755000 ns] #66 Opcode L-TYPE
+PC:     0000006c
+Instr:  0042a283
+x1: 00000064 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 765000 ns] #67 Opcode S-TYPE
+PC:     00000070
+Instr:  0052a023
+x1: 00000064 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=0, aluSrcMuxSel=1, dataWe=1, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 775000 ns] #68 Opcode JAL
+PC:     00000074
+Instr:  004000ef
+x1: 00000064 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=1, isJALR=0
+JAL instruction: x1 <= PC + 4 = 00000078
+Jump target: 00000078
+--------------------------------------------------------------
+
+[Time 785000 ns] #69 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 795000 ns] #70 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 805000 ns] #71 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 815000 ns] #72 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 825000 ns] #73 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 835000 ns] #74 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 845000 ns] #75 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 855000 ns] #76 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 865000 ns] #77 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 875000 ns] #78 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 885000 ns] #79 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 895000 ns] #80 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 905000 ns] #81 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 915000 ns] #82 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 925000 ns] #83 Opcode JALR
+PC:     00000078
+Instr:  00008067
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x0 <= PC + 4 = 0000007c
+Jump to: x1 + imm = 00000078
+--------------------------------------------------------------
+
+[Time 935000 ns] #84 Opcode JALR
+PC:     00000064
+Instr:  00408167
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x2 <= PC + 4 = 00000068
+Jump to: x1 + imm = 0000007c
+--------------------------------------------------------------
+
+[Time 945000 ns] #85 Opcode JALR
+PC:     00000064
+Instr:  00408167
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x2 <= PC + 4 = 00000068
+Jump to: x1 + imm = 0000007c
+--------------------------------------------------------------
+
+[Time 955000 ns] #86 Opcode JALR
+PC:     00000064
+Instr:  00408167
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x2 <= PC + 4 = 00000068
+Jump to: x1 + imm = 0000007c
+--------------------------------------------------------------
+
+----- JALR TEST -----
+
+[Time 965000 ns] #87 Opcode JALR
+PC:     00000064
+Instr:  00408167
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=0, dataWe=0, branch=1, isJAL=0, isJALR=1
+JALR instruction: x2 <= PC + 4 = 00000068
+Jump to: x1 + imm = 0000007c
+--------------------------------------------------------------
+
+[Time 975000 ns] #88 Opcode I-TYPE
+PC:     0000007c
+Instr:  00000013
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 985000 ns] #89 Opcode I-TYPE
+PC:     00000080
+Instr:  00000013
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+
+[Time 995000 ns] #90 Opcode I-TYPE
+PC:     00000084
+Instr:  00000013
+x1: 00000078 | x2: 00000068 | x3: 0000000d | x4: 0000b00c
+x5: xxxxxxxx | x6: 00006000 | x7: xxxxxxxx | x8: xxxxxxxx
+RAM[0]: xxxxxxxx | RAM[1]: xxxxxxxx
+Control: regFileWe=1, aluSrcMuxSel=1, dataWe=0, branch=0, isJAL=0, isJALR=0
+--------------------------------------------------------------
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1135.355 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 13 05:07:45 2025...
